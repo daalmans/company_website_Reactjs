@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom'
 
 const ContactForm = () => {
 
@@ -35,9 +36,10 @@ const ContactForm = () => {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...state })
+          body: encode({ "form-name": "contact",  ...state })
         })
-          .then(() => alert("Success!"))
+          .then(() => {alert("Twoja wiadomość została przyjęta!");
+          })
           .catch(error => alert(error));
 
         e.preventDefault();
