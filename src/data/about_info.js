@@ -2,7 +2,7 @@
 export const about_info = [
     {   
         imie: 'Roman Kraczla',
-        url: 'imie1',
+        url: 'roman-kraczla',
         opis: 'Socjolog  i terapeuta od ponad 15 lat zajmujący się pomocą psychologiczną.',
         url_img: '/img/Roman_Kraczla.png',
         opis_main: ['Obszarem moich zainteresowań  terapeutycznych są głównie zaburzenia emocjonalne, \
@@ -17,7 +17,7 @@ export const about_info = [
         },
     {
         imie: 'Prof. nadzw. dr hab. Magdalena Kraczla',
-        url: 'imie2',
+        url: 'magdalena-kraczla',
         opis: 'Psycholog zdrowia i psycholog biznesu',
         url_img: '/img/Magdalena_Kraczla.png',
         opis_main: ['Szanowni Państwo,', 'Specjalizuje się w problematyce stresu prywatnego i zawodowego, odporności psychicznej, braku pewności siebie, negatywnych i pesymistycznych postaw życiowych, wypalenia zawodowego, kryzysu wieku średniego, kształtowania osobistej kariery zawodowej oraz w diagnozie osobistego potencjału wyrażonego w predyspozycjach osobowościowych. Pracuje  głównie w nurcie psychologii  behawioralno-poznawczej  jednak za każdym razem dostosowuje metodę terapii do problemu i potrzeb Klienta.', 
@@ -27,7 +27,7 @@ export const about_info = [
         },
     {
         imie: 'Dr. Radosław Molenda',
-        url: 'imie3',
+        url: 'radoslaw-molenda',
         opis: 'Doktor psychologii',
         url_img: '/img/Radoslaw_Molenda.png',
         opis_main: ['Absolwent Wydziału Pedagogiki i Psychologii Uniwersytetu Śląskiego; adiunkt w Akademii WSB,  konsultant ds. pomocy psychologicznej (5-letnie doświadczenie na tym stanowisku), wpisany do Spisu Psychologów Polskich'],
