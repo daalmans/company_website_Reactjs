@@ -15,29 +15,36 @@ const ContactForm = () => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
-      }
+    }
 
     const handleSubmit = e => {
         fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact",  ...state })
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...state })
         })
-          .then(() => {alert("Twoja wiadomość została przyjęta!");
-          })
-          .catch(error => alert(error));
+            .then(() => {
+                alert("Twoja wiadomość została przyjęta!");
+                setState({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                })
+            })
+            .catch(error => alert(error));
 
         e.preventDefault();
-      };
+    };
 
     const handleChange = e => {
-            const { name, value } = e.target;
-            setState({
-                ...state,
-                [name]: value
-            });
-        };
-        
+        const { name, value } = e.target;
+        setState({
+            ...state,
+            [name]: value
+        });
+    };
+
     return (
 
         <div className="contact__form-container">
