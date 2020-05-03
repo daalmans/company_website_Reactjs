@@ -21,7 +21,7 @@ $raleway: 'Raleway', Arial, Helvetica, sans-serif;
 $garamond: 'EB Garamond', Arial, Helvetica, sans-serif;
 $opensans: 'Open Sans';
 $button-col: #141b52;
-$border-test: 1px solid black;
+$border-test: none;
 $home-text-main: 2.2vw;
 $home-text-sub: 1.2vw;
 
@@ -157,7 +157,7 @@ p {
         font-weight: bold;
         width: 70%;
         
-        font-size: $home-text-main;
+        font-size: $second-header-size;
         margin-top: 20px;
         padding:15px;
         border: $border-test;
@@ -177,13 +177,8 @@ p {
         }
     }
 
-
-        
-
-        // @media #{$small} {
-        //     font-size: $fourth-header-size;
     &__intro-sec {
-        font-size: $home-text-sub;
+        font-size: $fourth-header-size;
         font-family: $arial;
         width: 70%;
         padding:1em;
@@ -204,7 +199,7 @@ p {
     }
 
     &__caption {
-        font-size: $home-text-main;
+        font-size: $second-header-size;
         color: $main-dark-col;
         margin-top: 20px;
         transition: all .3s ease;
