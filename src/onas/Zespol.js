@@ -16,7 +16,7 @@ export const About = (props) => {
             {about_info.map((item, i) => {
               const { imie, opis, url, url_img, opis_main } = item;
               return (
-                <OsobaCard imie={imie} opis={opis} url={url} url_img={url_img} opis_main={opis_main}/>
+                <OsobaCard imie={imie} opis={opis} url={url} url_img={url_img} opis_main={opis_main} key={i}/>
               )
             })}
           </div>

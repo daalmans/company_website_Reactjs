@@ -3,7 +3,6 @@ import React from 'react';
 
 export const OfferItem = props => {
     const { title, url } = props;
-    console.log(title, url)
     return (
         <div className="offer-item">
             <div className="box-icon">

@@ -4,7 +4,6 @@ import { Home } from './home/Home';
 import { About } from './onas/Zespol';
 import { Contact } from './Contact';
 import Oferta from './oferta/Oferta';
-import { Blog } from './Blog';
 import { Footer } from './components/Footer';
 import Header from './components/Header';
 import {about_info} from './data/about_info'
@@ -25,7 +24,6 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/oferta" component={Oferta} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/blog" component={Blog} />
           <Route exact path="/kontakt" component={Contact} />
           <Route exact path="/about/:name" render={({match}) => 
             <Personal {...findByUrl(about_info, match.params.name)} /> }  /> 

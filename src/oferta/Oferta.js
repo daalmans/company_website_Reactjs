@@ -14,7 +14,7 @@ const Oferta = () => {
             {offer_main.map((item, i) => {
               const { title, text } = item;
               return (
-                <OfferItem title={title} text={text} />
+                <OfferItem title={title} text={text} key={i}/>
               )
             })}
           </div>
