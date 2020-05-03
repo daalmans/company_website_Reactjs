@@ -11,21 +11,6 @@ const ContactForm = () => {
         message: ''
     });
 
-    // const sendEmail = event => {
-    //     event.preventDefault();
-
-    //     console.log('We will fill this up shortly.');
-    //     // code to trigger Sending email
-    // };
-
-    // const onInputChange = event => {
-    //     const { name, value } = event.target;
-
-    //     setState({
-    //         ...state,
-    //         [name]: value
-    //     });
-    // };
     const encode = (data) => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -33,7 +18,7 @@ const ContactForm = () => {
       }
 
     const handleSubmit = e => {
-        fetch("/success", {
+        fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "contact",  ...state })
@@ -52,17 +37,10 @@ const ContactForm = () => {
                 [name]: value
             });
         };
-
+        
     return (
 
         <div className="contact__form-container">
-            {/* <div className="row">
-                <div className="col">
-                    <div>
-                        <h1>Skontaktuj się <span>z nami</span></h1>
-                    </div>
-                </div>
-            </div> */}
             <div className="contact__form">
                 <div className="">
                     <h1>Skontaktuj się <br /> <span> z nami </span></h1>

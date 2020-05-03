@@ -10,7 +10,7 @@ $second-header-size: 34px;
 $main-nav-col: #141b52;
 $link-hover-col: #448E9D;
 $bright-blue: #448E9D;
-$caption-size: 49px;
+$caption-size: 40px;
 $header-back: #ffffff;
 $main-pic: $header-back url('../img/main-back.jpg') no-repeat center center;
 $footer-font-col: #535353;
@@ -21,6 +21,7 @@ $raleway: 'Raleway', Arial, Helvetica, sans-serif;
 $garamond: 'EB Garamond', Arial, Helvetica, sans-serif;
 $opensans: 'Open Sans';
 $button-col: #141b52;
+$border-test: none;
 
 //BREAKPOINTS
 
@@ -146,10 +147,10 @@ p {
     &__caption {
         font-size: $caption-size;
         color: $main-dark-col;
-        margin-top: 50px;
+        margin-top: 20px;
         transition: all .3s ease;
         cursor: pointer;
-        border: 1px solid black;
+        border: $border-test;
         
         
 
@@ -167,7 +168,7 @@ p {
         width: 64px;
         height: 70px;
         background: url('../img/down.png') no-repeat;
-        margin-top: 65px;
+        margin-top: 20px;
         animation: hovering 1s ease-in-out infinite; 
         
         @media #{$small} {
@@ -181,8 +182,9 @@ p {
         width: 70%;
         
         font-size: $caption-size;
-        padding:12px;
-        border: 1px solid black; 
+        margin-top: 20px;
+        padding:15px;
+        border: $border-test;
 
         @media #{$small} {
             width: 100%;
@@ -201,7 +203,7 @@ p {
         width: 70%;
         padding:1em;
         background-color:rgba(255, 255, 255, 0.7);
-        border: 1px solid black; 
+        border: $border-test;
 
         @media #{$small} {
             font-size: 14px;
@@ -223,7 +225,7 @@ p {
     padding: 40px 0;
     box-sizing: border-box;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border: $border-test;
 
     @media #{$large} {
         padding: 60px 20px;
@@ -269,11 +271,11 @@ p {
     width: 100%;
     min-height: 356px;
     background: $main-back;
-    border: 1px solid black;
+    border: $border-test;
 
     &__intro {
         align-self: flex-start;
-        border: 1px solid black;
+        border: $border-test;
         padding-top: 1em;
 
         h1{
@@ -291,7 +293,7 @@ p {
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
-        border: 1px solid black;
+        border: $border-test;
     }
 
     .landing__btn{
@@ -299,7 +301,7 @@ p {
         justify-content: center;
         align-items: center;
         position: relative;
-        border: 1px solid black;      
+        border: $border-test;      
     }
 }
 
@@ -307,14 +309,14 @@ p {
     width: 100%;
     min-height: 356px;
     background: $contact-back;
-    border: 1px solid black;
+    border: $border-test;
 
      
 
     &-container{
         align-self: flex-start;
         padding: 1em;
-        border: 1px solid black;
+        border: $border-test;
 
         span{
             font-weight: bold;
@@ -329,10 +331,11 @@ p {
     width: 65%;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     flex-grow: 1;
     font-size: $third-header-size;
-    border: 1px solid black;
+    border: $border-test;
 
     @media #{$medium} {
         flex-direction: column;
@@ -419,10 +422,14 @@ p {
 .contact__form-container {
     align-self: flex-start;
     width: 70%;
-    border: 1px solid red;
+    border: $border-test;
     background: #fff;
     padding: 1em;
     box-shadow: 0 0 10px 0 rgba(72,94,116, 0.7);
+
+    @media #{$medium} {
+        width: 100%;
+    }
 }
 
 .footer{
@@ -432,13 +439,13 @@ p {
     color: #ffffff;
     padding: 45px 0 40px;        
     box-sizing: border-box;   
-    border: 1px solid red;
+    border: $border-test;
 
 
 
     &__contact {
         width: 50%;
-        border: 1px solid green;
+        border: $border-test;
         min-width: 340px;
         
 
@@ -451,7 +458,7 @@ p {
 
     &__blog-posts {
         width: 50%;
-        border: 1px solid white; 
+        border: $border-test;
         
         @media #{$large} {
             margin-bottom: 40px;
@@ -477,7 +484,7 @@ p {
 .offer-item{
     float: left;
     width:33%;
-    border:1px solid black;
+    border:$border-test;
     padding:2em 3em;
     text-align: center;
     flex-grow: 1;
@@ -485,7 +492,8 @@ p {
 
     .offer__title{
         font-family: $opensans;
-        padding: 1em;
+        padding: 0.5em 0.5em 0 0.5em;
+        border: $border-test;
     }
 
     @media #{$medium} {
@@ -495,51 +503,51 @@ p {
 }
 
 
-.contact-container{
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-    border: 1px solid black;
+// .contact-container{
+//     max-width: 1170px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 1em;
+//     border: $border-test;
 
-    .contact-form {
-        background: #f9feff;
+//     .contact-form {
+//         background: #f9feff;
         
-        form{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
-            margin: 0;
-            color: black;
-            }
+//         form{
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             grid-gap: 20px;
+//             margin: 0;
+//             color: black;
+//             }
             
-            .full{
-                grid-column: 1 / 3;
-            }
+//             .full{
+//                 grid-column: 1 / 3;
+//             }
         
-            .button-form, textarea, input{
-            width: 100%;
-            padding: 1em;
-            border: 1px solid #c9e6ff;
-                }
+//             .button-form, textarea, input{
+//             width: 100%;
+//             padding: 1em;
+//             border: 1px solid #c9e6ff;
+//                 }
         
-            .button-form{
-            background:  #c9e6ff;
-            border: 0;
+//             .button-form{
+//             background:  #c9e6ff;
+//             border: 0;
             
-            &:hover, &:focus{
-                background: #92bde7;
-                color: #fff;
-                outline:0;
-                transition: background-color 1s ease-out;
-            }
-            }
+//             &:hover, &:focus{
+//                 background: #92bde7;
+//                 color: #fff;
+//                 outline:0;
+//                 transition: background-color 1s ease-out;
+//             }
+//             }
         
-        label{
-            display: block;
-        }
-        }
-}
+//         label{
+//             display: block;
+//         }
+//         }
+// }
 
 .contact__form {
     max-width: 800px;
@@ -629,7 +637,7 @@ p {
         position: relative;
         margin-bottom: 30px;
         margin-top: 0px;
-        border: 1px solid black; 
+        border: $border-test;
     }
 }
 
@@ -659,7 +667,7 @@ p {
         margin-bottom: 30px;
         margin-top: 0px;
         padding-left: 1em;
-        border: 1px solid black;
+        border: $border-test;
 
     }
 }
@@ -669,21 +677,21 @@ p {
     width:33.3%;
     padding:1em 1em;
     align-items: center;
-    border:1px solid black;
+    border:$border-test;
 
     &__info {
-        border: 1px solid black;
+        border: $border-test;
     }
     &__name{
         padding:1em 0em;
         min-height: 100px;
-        border: 1px solid black;
+        border: $border-test;
     }
 
     &__opis{
         min-height: 80px;
         font-family: $arial;
-        border: 1px solid black;
+        border: $border-test;
     }
 
 
@@ -700,7 +708,7 @@ p {
 
 .contact {
     width: 100%;
-    border: 1px solid black;
+    border: $border-test;
 
     .container{
         margin-top: 1em;
@@ -711,7 +719,7 @@ p {
     .contact__heading {
         padding: 0px;
         align-self: flex-start;
-        border: 1px solid black;
+        border: $border-test;
         margin-left: 30px;
 
         span{
@@ -731,7 +739,7 @@ p {
         
         align-items: flex-start;
         padding: 0;
-        border: 1px solid white;
+        border: $border-test;
 
         @media #{$medium} {
             flex-direction: column;
@@ -739,7 +747,7 @@ p {
     }
     &-email{
         width: 50%;
-        border: 1px solid white;
+        border: $border-test;
         padding: 1em;
 
         @media #{$medium} {
@@ -766,7 +774,7 @@ p {
     &__img {
         float: right;
         margin-bottom: 10px;
-        border: 1px solid black; 
+        border: $border-test;
         padding-left: 50px;
         max-width: 100%;
         max-height: 100%;
@@ -783,17 +791,17 @@ p {
         margin-left: 30px;
         padding-left: 10px;
         margin-bottom: 15px;
-        border-left: 5px solid white;
+        border-left: $border-test;
     }
 
     .opis {
-        border: 1px solid black; 
+        border: $border-test;
         padding-left: 30px;
         font-size: $fourth-header-size;
     }
 
     .opis__main{
-        border: 1px solid black; 
+        border: $border-test;
         padding: 30px; 
     }
 
@@ -809,7 +817,7 @@ p {
         padding:1.2em 30px 1.2em 60px;
         line-height:1.6;
         position: relative;
-        border: 1px solid black; 
+        border: $border-test;
       }
       
       .blockquote::before{
@@ -843,7 +851,7 @@ p {
         display: block;
         font-family: $arial;
         color: $main-light-col;
-        border: 1px solid white; 
+        border: $border-test;
     }
 
     ul{

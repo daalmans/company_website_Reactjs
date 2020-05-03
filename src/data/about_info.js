@@ -4,7 +4,7 @@ export const about_info = [
         imie: 'Roman Kraczla',
         url: 'imie1',
         opis: 'Socjolog  i terapeuta od ponad 15 lat zajmujący się pomocą psychologiczną.',
-        url_img: '/img/person1.png',
+        url_img: '/img/Roman_Kraczla.png',
         opis_main: ['Obszarem moich zainteresowań  terapeutycznych są głównie zaburzenia emocjonalne, \
                     zaburzenia osobowości i  kryzysy w życiu rodzinnym i osobistym.\
                     Pracuję  w nurcie analizy transakcyjnej i psychologii behawioralno-poznawczej. \
@@ -19,7 +19,7 @@ export const about_info = [
         imie: 'Prof. nadzw. dr hab. Magdalena Kraczla',
         url: 'imie2',
         opis: 'Psycholog zdrowia i psycholog biznesu',
-        url_img: '/img/person2.png',
+        url_img: '/img/Magdalena_Kraczla.png',
         opis_main: ['Szanowni Państwo,', 'Specjalizuje się w problematyce stresu prywatnego i zawodowego, odporności psychicznej, braku pewności siebie, negatywnych i pesymistycznych postaw życiowych, wypalenia zawodowego, kryzysu wieku średniego, kształtowania osobistej kariery zawodowej oraz w diagnozie osobistego potencjału wyrażonego w predyspozycjach osobowościowych. Pracuje  głównie w nurcie psychologii  behawioralno-poznawczej  jednak za każdym razem dostosowuje metodę terapii do problemu i potrzeb Klienta.', 
         'Odbyła staż w jednej z najlepszych w Polsce placówek terapeutycznych w Klinice Nerwic Instytutu Psychiatrii i Neurologii w Warszawie.',
         'Od ponad 20 lat świadczy pomoc psychologiczną osobom będącym w kryzysach życiowych, cierpiącym z powodu negatywnych postaw życiowych, niskiej samooceny, wypalenia zawodowego, zmagań z brakiem równowagi życiowej, z poczuciem przeciążania oraz sytuacji kryzysowych, będących następstwem rozwodów. Zajmuje się także  wspieraniem rozwoju osobistego  i tworzeniem poczucia dobrostanu. ',],
@@ -29,7 +29,7 @@ export const about_info = [
         imie: 'Dr. Radosław Molenda',
         url: 'imie3',
         opis: 'Doktor psychologii',
-        url_img: '/img/person3.png',
+        url_img: '/img/Radoslaw_Molenda.png',
         opis_main: ['Absolwent Wydziału Pedagogiki i Psychologii Uniwersytetu Śląskiego; adiunkt w Akademii WSB,  konsultant ds. pomocy psychologicznej (5-letnie doświadczenie na tym stanowisku), wpisany do Spisu Psychologów Polskich'],
         message: ['Szanowni Państwo,', 
             'oferuję pomoc  terapeutyczną w zakresie leczenia lęków i fobii, nerwic, zaburzeń psychosomatycznych, depresji  i innych zaburzeń psychicznych. W swojej pracy preferuję model pracy oparty o terapię ericksonowską w której się ciągle doskonalę  w  Polskim Instytucie Ericksonowskim. Regularnie superwizuję swoją pracę, aby zapewnić najwyższy standard oferowanych usług (superwizja w podejściu ericksonowskim odbywana w filii Polskiego Instytutu Ericksonowskiego w Katowicach).',    
