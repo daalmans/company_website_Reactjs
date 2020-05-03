@@ -15,7 +15,7 @@ const Osoba = props => {
         <p>{props.opis}</p>
         </div>
         <div className="btn-container">
-          <a className="button" href={'/about/' + props.url}>Zobacz więcej</a>
+          <a className="button" href={`/about/${props.url}`}>Zobacz więcej</a>
         </div>
       </div>
     </div>

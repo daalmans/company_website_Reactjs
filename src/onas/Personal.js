@@ -9,6 +9,7 @@ const Personal = (props) => {
         <div className="personal">
             <div className="wrapper">
                 <div className="imie">{props.imie}</div>
+                <p>
                     <div>
                         <img src={props.url_img} alt='Image 1' className='personal__img' />
                     </div>
@@ -18,6 +19,7 @@ const Personal = (props) => {
                     <div className="opis__msg">
                         <blockquote className="blockquote">{renderItems(props.message)}</blockquote>
                     </div>
+                </p>
                 <div className="personal__btn">
                     <a className="button" href='/about'>Powrót</a>
                 </div>
