@@ -3,46 +3,46 @@ import { Form } from 'react-bootstrap';
 
 const ContactForm = () => {
 
-    // const [state, setState] = useState({
-    //     name: '',
-    //     email: '',
-    //     subject: '',
-    //     message: ''
-    // });
+    const [state, setState] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
 
-    // const encode = (data) => {
-    //     return Object.keys(data)
-    //         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    //         .join("&");
-    // }
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
 
-    // const handleSubmit = e => {
-    //     fetch("/", {
-    //         method: "POST",
-    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //         body: encode({ "form-name": "contact", ...state })
-    //     })
-    //         .then(() => {
-    //             alert("Twoja wiadomość została przyjęta!");
-    //             setState({
-    //                 name: '',
-    //                 email: '',
-    //                 subject: '',
-    //                 message: ''
-    //             })
-    //         })
-    //         .catch(error => alert(error));
+    const handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...state })
+        })
+            .then(() => {
+                alert("Twoja wiadomość została przyjęta!");
+                setState({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                })
+            })
+            .catch(error => alert(error));
 
-    //     e.preventDefault();
-    // };
+        e.preventDefault();
+    };
 
-    // const handleChange = e => {
-    //     const { name, value } = e.target;
-    //     setState({
-    //         ...state,
-    //         [name]: value
-    //     });
-    // };
+    const handleChange = e => {
+        const { name, value } = e.target;
+        setState({
+            ...state,
+            [name]: value
+        });
+    };
 
     return (
 
@@ -53,29 +53,25 @@ const ContactForm = () => {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <form
-                             name="contact-form"
-                             method="POST"
-                             data-netlify="true"
-                             netlify-honeypot="bot-field"
-                             action="/thank-you"
-                        >
+                        <form onSubmit={handleSubmit}>
                             <Form.Group controlId="name">
                                 {/* <Form.Label>Full Name</Form.Label> */}
                                 <input
                                     type="text"
                                     name="name"
+                                    value={state.name}
                                     placeholder="Twoje Imię"
-                                    required={true}
+                                    onChange={handleChange}
                                 />
                             </Form.Group>
                             <Form.Group controlId="email">
                                 {/* <Form.Label>Email</Form.Label> */}
                                 <input
-                                    type="email"
+                                    type="text"
                                     name="email"
+                                    value={state.email}
                                     placeholder="Twój adres e-mail"
-                                    required={true}
+                                    onChange={handleChange}
                                 />
                             </Form.Group>
                             <Form.Group controlId="message">
@@ -83,9 +79,10 @@ const ContactForm = () => {
                                 <textarea
                                     as="textarea"
                                     name="message"
+                                    value={state.message}
                                     rows="5"
                                     placeholder="Twoja wiadomość"
-                                    required={true}
+                                    onChange={handleChange}
                                 />
                             </Form.Group>
                             <button className="button" type="submit">
