@@ -828,7 +828,7 @@ p {
   margin-left: 30px;
   padding-left: 10px;
   margin-bottom: 15px;
-  border-left: 1px solid black;
+  border-left: 4px solid #fff;
 }
 
 .personal .opis {
