@@ -10,6 +10,7 @@ export const item = props => {
             <div className="oferta__item-opis">
             <p>{props.text}</p>
             </div>
+            <hr />
         </div>
     )
 
