@@ -1,29 +1,33 @@
 import React from 'react';
+import {contact_info} from '../data/contact_info'
+
 
 const ContactFooter = () => {
-    return (
 
+    // const { tel, email, adres } = props;
+
+    return (
+        
         <div>
             <div className="footer-contact-info">
-                <div className="logo"></div>
+                <div className="logo-footer"><img className="image" src="/img/logo_light.png"/></div>
                 <div>
                     <ul className="contact-info">
                         <li>
                             <span>Tel:</span>
                             <br />
-                    555 555 5555
+                    {contact_info.tel}
                 </li>
                         <li>
                             <span>E-mail:</span>
                             <br />
-                    email@email.com
+                    {contact_info.email}
                 </li>
                         <li>
                             <span>Address:</span>
                             <br />
-                    Address 1
+                    {contact_info.adres}
                     <br />
-                    Address 2
                 </li>
                     </ul>
                 </div>

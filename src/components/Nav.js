@@ -15,8 +15,6 @@ const Nav = props => {
             <NavLink className={getClassName("/kontakt")} exact to="/kontakt">Kontakt</NavLink>                       
         </div>
     );
-
-    
 };
 
 export default withRouter(Nav);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Home } from './home/Home';
+import  Home from './home/Home';
 import { About } from './onas/Zespol';
 import { Contact } from './Contact';
 import Oferta from './oferta/Oferta';
@@ -11,6 +11,7 @@ import {offer_front_text} from './data/offer_front_text'
 import Personal from './onas/Personal'
 import OfferItemExtended from './oferta/OfferItemExtended'
 import Cennik from './cennik/Cennik'
+
 
 
 const findByUrl = (data, url) => 
@@ -36,7 +37,7 @@ const App = () => {
           <Route exact path="/about/:name" render={({match}) => 
             <Personal {...findByUrl(about_info, match.params.name)} /> }  /> 
 
-          <Footer />
+          <Footer/>
         </div>
       </BrowserRouter>
     </div>

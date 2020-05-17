@@ -6,6 +6,7 @@ import ContactFooter from './ContactFooter'
 
 export const Footer = () => {
     return (
+        
         <footer className="footer">
             <div className="wrapper wrapper--footer">
 

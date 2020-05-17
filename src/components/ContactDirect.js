@@ -1,4 +1,5 @@
 import React from 'react'
+import {contact_info} from '../data/contact_info'
 
 const ContactDirect = () => {
     return (
@@ -11,22 +12,10 @@ const ContactDirect = () => {
 
             <div className="contact-direct__container">
                 <div className="contact-direct-email">
-                    <h3><i className="fa fa-envelope"></i> email@email.com</h3>
+                    <h4><i className="fa fa-envelope"></i> {contact_info.email}</h4>
                 </div>
                 <div className="contact-direct-phone">
-                    <h3><i className="fa fa-phone"></i> 555 555 555 </h3>
-                </div>
-                <div className="contact-direct-email">
-                    <h3><i className="fa fa-envelope"></i> email@email.com</h3>
-                </div>
-                <div className="contact-direct-phone">
-                    <h3><i className="fa fa-phone"></i> 555 555 555 </h3>
-                </div>
-                <div className="contact-direct-email">
-                    <h3><i className="fa fa-envelope"></i> email@email.com</h3>
-                </div>
-                <div className="contact-direct-phone">
-                    <h3><i className="fa fa-phone"></i> 555 555 555 </h3>
+                    <h4><i className="fa fa-phone"></i>  {contact_info.tel} </h4>
                 </div>
             </div>
         </div>

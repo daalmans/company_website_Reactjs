@@ -148,11 +148,13 @@ p {
         height: 70px;
         background: url('../img/down.png') no-repeat;
         margin-top: 20px;
-        animation: hovering 1s ease-in-out infinite; 
+        animation: hovering 1s ease-in-out infinite;
         
         @media #{$small} {
+            // font-size: $third-header-size; 
             display: none;
         }
+        
     }
 
     &__intro {
@@ -174,19 +176,22 @@ p {
 
 
         @media #{$small} {
-            width: 100%;
+            width: 95%;
             // font-size: 18px;
             margin-top: 0px;
             padding:5px;
         }
 
-        @media screen and (min-width: 1280px) {
-            font-size: 30px;
-          }
 
         @media screen and (min-width: 320px) {
-            font-size: calc(22px + 8 * ((100vw - 320px) / 960));
+            // font-size: calc(22px + 8 * ((100vw - 320px) / 960));
+            font-size: $third-header-size;
+            padding: 10px 5px;
           }
+
+        @media screen and (min-width: 1280px) {
+          font-size: 30px;
+        }
     }
 
     &__intro-sec {
@@ -194,23 +199,28 @@ p {
         font-size: 14px;
         font-family: $arial;
         width: 70%;
-        padding:1em;
+        
         background-color:rgba(255, 255, 255, 0.7);
         border: $border-test;
 
 
-        @media screen and (min-width: 1280px) {
-            font-size: 18px;
-          }
+
 
         @media screen and (min-width: 320px) {
             font-size: calc(14px + 4 * ((100vw - 320px) / 960));
+            width: 95%;
+            padding: 10px 5px;
+            // font-size: $fourth-header-size;
           }
 
-        @media #{$small} {
-            display:none;
-            
+        @media screen and (min-width: 1280px) {
+          font-size: 18px;
+          width: 70%;
+          padding:1em;
         }
+
+            
+        
     }
 
     &__caption {
@@ -220,6 +230,7 @@ p {
         transition: all .3s ease;
         cursor: pointer;
         border: $border-test;
+        text-align: center;
         
         // @media #{$medium} {
         //     font-size: $third-header-size; 
@@ -230,13 +241,16 @@ p {
         //     font-size: $fourth-header-size; 
         // }
 
-        @media screen and (min-width: 1280px) {
-            font-size: 30px;
-          }
-
         @media screen and (min-width: 320px) {
-            font-size: calc(22px + 8 * ((100vw - 320px) / 960));
+            // font-size: calc(22px + 8 * ((100vw - 320px) / 960));
+            width: 95%;
+            font-size: $third-header-size;
+            padding: 10px 5px;
           }
+        
+        @media screen and (min-width: 1280px) {
+          font-size: 30px;
+        }
 
         &:hover {
             color: $bright-blue;
@@ -264,6 +278,10 @@ p {
         padding: 60px 20px;
     }
 
+    @media #{$small} {
+        padding: 0px 0px;
+    }
+
     &--header, &--footer{
         flex-direction: row;
         align-items: flex-start;
@@ -272,7 +290,14 @@ p {
         @media #{$large} {
             padding: 0 20px;
         }
-    }   
+    }
+    
+    &--home{
+        @media #{$medium} {
+            padding: 0px;
+            margin: 0;
+        }
+    }
 
     &--footer {
         @media #{$large} {
@@ -286,10 +311,36 @@ p {
     }
 }
 
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .logo {
-    width: 254px;
-    height: 91px;
-    background: url('../img/logo.png') no-repeat;  
+    max-width: 393.7px;
+    max-height: 157.7px;
+    
+    border: $border-test;
+}
+
+.logo-footer {
+    max-width: 393.7px;
+    max-height: 157.7px;
+    border: $border-test;
+}
+
+.logo-main {
+    max-width: 393.7px;
+    max-height: 157.7px;
+    // object-fit: contain;
+    // background: url('../img/Dog.jpg') no-repeat; 
+    border: $border-test;
+    
+
+
+    @media #{$small} {
+        display:none;
+    }
 
 }
 
@@ -311,6 +362,10 @@ p {
         align-self: flex-start;
         border: $border-test;
         padding-top: 1em;
+
+        @media #{$medium} {
+            padding: 1em;
+        }
 
         h1{
             font-weight: bold;
@@ -361,6 +416,7 @@ p {
 
 
 .main-nav {
+
     display: flex;
     width: 65%;
     justify-content: space-between;
@@ -370,6 +426,7 @@ p {
     flex-grow: 1;
     font-size: $third-header-size;
     border: $border-test;
+    
 
     @media #{$medium} {
         flex-direction: column;
@@ -385,6 +442,20 @@ p {
         margin-bottom: 20px;
         font-size: $fourth-header-size;
     }
+
+    &--home {
+
+        @media #{$small} {
+            display: none;
+        }
+
+        >a {
+            margin-right: 0px;            
+        }
+    }
+
+
+    
 
     &--header {
         font-size: 21px;
@@ -423,18 +494,74 @@ p {
     }
 }
 
+.sidebar {
+    position: fixed;
+    top: 83px;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    background: $header-back;
+    z-index: 500;    
+}
+
+.head{
+    background: $header-back;
+    height: 83px;    
+    position: relative;
+    z-index: 5;
+    border: $border-test;
+    // display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px;
+    display: none;
+    // align-items: center;
+
+    .logo {
+        margin-top: 15px;
+        width: 200px;
+        background-size: 100%;
+        margin-right: 85px;
+
+        @media #{$small} {
+            margin-right: 0;
+        }
+
+    }
+
+    &__logo-link {
+
+        @media #{$small} {
+            flex-grow: 1;
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+    @media #{$small} {
+        display: flex;
+    }
+}
+
 
 .header {
     background: $header-back;
     height: 83px;    
     position: relative;
-    z-index: 5;
+    z-index: 300;
 
     .logo {
         margin-top: 15px;
-        width: 138px;
+        width: 200px;
         background-size: 100%;
         margin-right: 85px;
+        border: $border-test;
+
+        @media #{$small} {
+            margin-right: 0;
+        }
     }
 
     &__logo-link {
@@ -455,6 +582,7 @@ p {
         margin-top: 30px;
         cursor: pointer;
         display: none;
+        border: $border-test;
 
         @media #{$medium} {
             display: block;
@@ -512,17 +640,6 @@ p {
 }
 
 
-
-
-.sidebar {
-    position: fixed;
-    top: 83px;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    background: $header-back;
-    z-index: 5;    
-}
 
 .offer-item{
     float: left;
@@ -689,15 +806,6 @@ p {
 
 .cennik {
   
-    // .cennik__heading {
-    //     text-align: center;
-    //     font-size: $caption-size;
-    //     font-weight: bold;
-    //     position: relative;
-    //     margin-bottom: 30px;
-    //     margin-top: 0px;
-    //     border: $border-test;
-    // }
     &-items{
         width:100%;
     }

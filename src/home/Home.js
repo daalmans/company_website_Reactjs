@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ContactForm from '../components/ContactForm';
 import { Element, scroller } from 'react-scroll';
 import { Fade } from 'react-reveal';
 import Landing from './Landing';
 import Nav from '../components/Nav';
+import SideBar from '../components/SideBar';
+import { Link } from 'react-router-dom';
 
 const scrollToLanding = elem => {
   scroller.scrollTo(elem, {
@@ -14,14 +16,28 @@ const scrollToLanding = elem => {
 }
 
 
-export const Home = () => {
+const Home = () => {
+  const [visible, setVisible] = useState(false)
+
+  const showSideBar = () => {
+    setVisible(!visible)
+  }
+
   return (
     <div>
       <div className="home">
         <Fade>
           <div className="home__header">
             <div className="wrapper">
-              <div className="logo"></div>
+              <div className="head">
+              <Link className="head__logo-link" to="/">
+                <div className="logo"><img className="image" src="/img/logo_dark.png"/></div>
+                </Link>
+                <div className="header__menu" onClick={showSideBar}></div>
+                <SideBar showSideBar={visible} />
+                
+              </div>
+              <div className="logo-main"><img className="image" src="/img/logo_dark.png"/></div>
               <Nav context="home" />
               <div className="home__intro">
                 Jeśli czujesz, że problemy zaczynają Cię przytłaczać, sięgnij po pomoc.
@@ -62,3 +78,4 @@ export const Home = () => {
 
 
 
+export default Home
