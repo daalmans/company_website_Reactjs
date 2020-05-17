@@ -359,8 +359,6 @@ p {
 }
 
 .landing__intro {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   border: none;
   padding-top: 1em;
 }
