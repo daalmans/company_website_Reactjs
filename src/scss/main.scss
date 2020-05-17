@@ -13,15 +13,13 @@ $bright-blue: #448E9D;
 $caption-size: 40px;
 $header-back: #ffffff;
 $main-pic: $header-back url('../img/main-back.jpg') no-repeat center center;
-$footer-font-col: #535353;
-$footer-caption-col: #44423C;
 $arial: Arial, Helvetica, sans-serif;
 $oswald: 'Oswald', Arial, Helvetica, sans-serif;
 $raleway: 'Raleway', Arial, Helvetica, sans-serif;
 $garamond: 'EB Garamond', Arial, Helvetica, sans-serif;
 $opensans: 'Open Sans';
 $button-col: #141b52;
-$border-test: 1px solid black;
+$border-test: none;
 
 
 
@@ -66,7 +64,7 @@ a {
 
     &::after {
         content: '';
-        background: transparent;
+        // background: transparent;
         position: absolute;
         height: 3px;
         bottom: -3px;
@@ -78,9 +76,9 @@ a {
     &:hover {
         color:$link-hover-col;
 
-        // &::after {
-        //     background: $bright-blue;
-        // }
+        &::after {
+            background: $bright-blue;
+        }
     }
 }
 
@@ -496,12 +494,13 @@ p {
 }
 
 .sidebar {
+    background: $header-back;
     position: fixed;
     top: 83px;
     bottom: 0;
     right: 0;
     width: 80%;
-    background: $header-back;
+    
     z-index: 500;    
 }
 
@@ -835,7 +834,7 @@ p {
 .about {
     width: 100%;
     min-height: 356px;
-    background:$main-back;
+    // background:$main-back;
 
     .about__heading {
         align-self: flex-start;

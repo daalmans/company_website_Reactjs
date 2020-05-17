@@ -62,7 +62,6 @@ a {
 
 a::after {
   content: '';
-  background: transparent;
   position: absolute;
   height: 3px;
   bottom: -3px;
@@ -74,6 +73,10 @@ a::after {
 
 a:hover {
   color: #448E9D;
+}
+
+a:hover::after {
+  background: #448E9D;
 }
 
 html, body {
@@ -152,7 +155,7 @@ p {
   font-size: 34px;
   margin-top: 20px;
   padding: 15px;
-  border: 1px solid black;
+  border: none;
   font-size: 22px;
 }
 
@@ -189,7 +192,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   width: 70%;
   background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid black;
+  border: none;
 }
 
 @media screen and (min-width: 320px) {
@@ -215,7 +218,7 @@ p {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   cursor: pointer;
-  border: 1px solid black;
+  border: none;
   text-align: center;
 }
 
@@ -257,7 +260,7 @@ p {
           box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 1370px) {
@@ -324,20 +327,20 @@ p {
 .logo {
   max-width: 393.7px;
   max-height: 157.7px;
-  border: 1px solid black;
+  border: none;
 }
 
 .logo-footer {
   max-width: 393.7px;
   max-height: 157.7px;
-  border: 1px solid black;
+  border: none;
 }
 
 .logo-main {
   max-width: 393.7px;
   max-height: 157.7px;
   padding: 1.5em;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 430px) {
@@ -356,13 +359,13 @@ p {
   width: 100%;
   min-height: 356px;
   background: #b4cbc3;
-  border: 1px solid black;
+  border: none;
 }
 
 .landing__intro {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  border: 1px solid black;
+  border: none;
   padding-top: 1em;
 }
 
@@ -390,7 +393,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid black;
+  border: none;
 }
 
 .landing .landing__btn {
@@ -404,19 +407,19 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  border: 1px solid black;
+  border: none;
 }
 
 .home__contact {
   width: 100%;
   min-height: 356px;
   background: #ffffff;
-  border: 1px solid black;
+  border: none;
 }
 
 .home__contact-container {
   padding: 1em;
-  border: 1px solid black;
+  border: none;
 }
 
 .home__contact-container span {
@@ -440,7 +443,7 @@ p {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 27px;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -521,12 +524,12 @@ p {
 }
 
 .sidebar {
+  background: #ffffff;
   position: fixed;
   top: 83px;
   bottom: 0;
   right: 0;
   width: 80%;
-  background: #ffffff;
   z-index: 500;
 }
 
@@ -535,7 +538,7 @@ p {
   height: 83px;
   position: relative;
   z-index: 5;
-  border: 1px solid black;
+  border: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -593,7 +596,7 @@ p {
   width: 200px;
   background-size: 100%;
   margin-right: 85px;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 430px) {
@@ -622,7 +625,7 @@ p {
   margin-top: 30px;
   cursor: pointer;
   display: none;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -635,7 +638,7 @@ p {
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 70%;
-  border: 1px solid black;
+  border: none;
   background: #fff;
   padding: 1em;
   -webkit-box-shadow: 0 0 10px 0 rgba(72, 94, 116, 0.7);
@@ -656,12 +659,12 @@ p {
   padding: 45px 0 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid black;
+  border: none;
 }
 
 .footer__contact {
   width: 50%;
-  border: 1px solid black;
+  border: none;
   min-width: 280px;
 }
 
@@ -679,7 +682,7 @@ p {
 
 .footer__blog-posts {
   width: 50%;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 1370px) {
@@ -694,7 +697,7 @@ p {
 .offer-item {
   float: left;
   width: 33%;
-  border: 1px solid black;
+  border: none;
   padding: 2em 3em;
   text-align: center;
   -webkit-box-flex: 1;
@@ -709,7 +712,7 @@ p {
 .offer-item .box-icon .offer__title {
   font-family: "Open Sans";
   padding: 0.5em 0.5em 0 0.5em;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -795,7 +798,7 @@ p {
   position: relative;
   margin-bottom: 30px;
   margin-top: 0px;
-  border: 1px solid black;
+  border: none;
 }
 
 .oferta__item-title {
@@ -820,7 +823,7 @@ p {
 }
 
 .offer-extended .opis__main {
-  border: 1px solid black;
+  border: none;
   padding: 30px;
 }
 
@@ -835,7 +838,7 @@ p {
   padding: 1.2em 30px 1.2em 60px;
   line-height: 1.6;
   position: relative;
-  border: 1px solid black;
+  border: none;
 }
 
 .offer-extended .blockquote::before {
@@ -879,7 +882,6 @@ p {
 .about {
   width: 100%;
   min-height: 356px;
-  background: #b4cbc3;
 }
 
 .about .about__heading {
@@ -891,7 +893,7 @@ p {
   margin-bottom: 30px;
   margin-top: 0px;
   padding-left: 1em;
-  border: 1px solid black;
+  border: none;
 }
 
 .onas-item {
@@ -901,23 +903,23 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
+  border: none;
 }
 
 .onas-item__info {
-  border: 1px solid black;
+  border: none;
 }
 
 .onas-item__name {
   padding: 1em 0em;
   min-height: 100px;
-  border: 1px solid black;
+  border: none;
 }
 
 .onas-item__opis {
   min-height: 80px;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -935,7 +937,7 @@ p {
 
 .contact {
   width: 100%;
-  border: 1px solid black;
+  border: none;
 }
 
 .contact .container {
@@ -948,7 +950,7 @@ p {
   padding: 0px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  border: 1px solid black;
+  border: none;
   margin-left: 30px;
 }
 
@@ -975,7 +977,7 @@ p {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0;
-  border: 1px solid black;
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -989,7 +991,7 @@ p {
 
 .contact-direct-email {
   width: 50%;
-  border: 1px solid black;
+  border: none;
   padding: 1em;
 }
 
@@ -1013,7 +1015,7 @@ p {
 .personal__img {
   float: right;
   margin-bottom: 10px;
-  border: 1px solid black;
+  border: none;
   padding-left: 50px;
   max-width: 100%;
   max-height: 100%;
@@ -1037,13 +1039,13 @@ p {
 }
 
 .personal .opis {
-  border: 1px solid black;
+  border: none;
   padding-left: 30px;
   font-size: 20px;
 }
 
 .personal .opis__main {
-  border: 1px solid black;
+  border: none;
   padding: 30px;
 }
 
@@ -1058,7 +1060,7 @@ p {
   padding: 1.2em 30px 1.2em 60px;
   line-height: 1.6;
   position: relative;
-  border: 1px solid black;
+  border: none;
 }
 
 .personal .blockquote::before {
@@ -1089,7 +1091,7 @@ p {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   color: #b4cbc3;
-  border: 1px solid black;
+  border: none;
 }
 
 .footer-contact-info ul {
