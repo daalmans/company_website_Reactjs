@@ -500,7 +500,7 @@ p {
     bottom: 0;
     right: 0;
     width: 80%;
-    
+    overflow:auto;
     z-index: 500;    
 }
 
@@ -1050,4 +1050,9 @@ p {
     }
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
