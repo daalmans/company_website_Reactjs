@@ -524,13 +524,12 @@ p {
 }
 
 .sidebar {
-  background: #ffffff;
   position: fixed;
   top: 83px;
   bottom: 0;
   right: 0;
   width: 80%;
-  overflow: auto;
+  background: #ffffff;
   z-index: 500;
 }
 
@@ -1116,11 +1115,5 @@ p {
 
 .footer-contact-info li {
   margin: 10px 0;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /*# sourceMappingURL=main.css.map */
