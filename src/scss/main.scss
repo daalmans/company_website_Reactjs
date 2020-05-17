@@ -21,7 +21,7 @@ $raleway: 'Raleway', Arial, Helvetica, sans-serif;
 $garamond: 'EB Garamond', Arial, Helvetica, sans-serif;
 $opensans: 'Open Sans';
 $button-col: #141b52;
-$border-test: none;
+$border-test: 1px solid black;
 
 
 
@@ -332,6 +332,7 @@ p {
 .logo-main {
     max-width: 393.7px;
     max-height: 157.7px;
+    padding: 1.5em;
     // object-fit: contain;
     // background: url('../img/Dog.jpg') no-repeat; 
     border: $border-test;
@@ -431,10 +432,10 @@ p {
     @media #{$medium} {
         flex-direction: column;
         align-items: center;
-        margin-top: 0px;
+        margin-top: 20px;
         margin-bottom: 20px;
         justify-content: flex-start;
-        font-size: $fourth-header-size;
+        // font-size: $fourth-header-size;
     }
 
     @media #{$small} {
@@ -510,13 +511,12 @@ p {
     position: relative;
     z-index: 5;
     border: $border-test;
-    // display: flex;
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
     padding: 0 20px;
     display: none;
-    // align-items: center;
+
 
     .logo {
         margin-top: 15px;
@@ -550,7 +550,7 @@ p {
     background: $header-back;
     height: 83px;    
     position: relative;
-    z-index: 300;
+    z-index: 5;
 
     .logo {
         margin-top: 15px;
