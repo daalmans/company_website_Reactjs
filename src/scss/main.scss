@@ -76,9 +76,9 @@ a {
     &:hover {
         color:$link-hover-col;
 
-        &::after {
-            background: $bright-blue;
-        }
+        // &::after {
+        //     background: $bright-blue;
+        // }
     }
 }
 
@@ -814,6 +814,7 @@ p {
     &-title{
         border-left: 4px solid white;
         margin-left: 20px;
+        margin-top: 10px;
         padding:10px  0  10px 10px;
     }
 

@@ -75,10 +75,6 @@ a:hover {
   color: #448E9D;
 }
 
-a:hover::after {
-  background: #448E9D;
-}
-
 html, body {
   height: 100%;
 }
@@ -867,6 +863,7 @@ p {
 .cennik__item-title {
   border-left: 4px solid white;
   margin-left: 20px;
+  margin-top: 10px;
   padding: 10px  0  10px 10px;
 }
 
