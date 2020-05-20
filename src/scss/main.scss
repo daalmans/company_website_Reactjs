@@ -473,6 +473,9 @@ p {
 
     &--sidebar {
         width:100%;
+        background: #fff;
+        margin:0;
+        height: calc(100vh)
     }
 
     &__item {

@@ -17,10 +17,11 @@ const Header = () => {
 
     return (
         <Fade top delay={50}>
+            
             <header className="header">
                 <div className="wrapper wrapper--header">
                     <Link className="header__logo-link" to="/">
-                        <div className="logo"><img className="image" src="/img/logo_dark.png"/></div>
+                        <div className="logo"><img className="image" src="/img/logo_dark.png" /></div>
                     </Link>
                     <Nav context="header" />
                     <div className="header__menu" onClick={showSideBar}></div>

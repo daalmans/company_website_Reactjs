@@ -497,6 +497,9 @@ p {
 
 .main-nav--sidebar {
   width: 100%;
+  background: #fff;
+  margin: 0;
+  height: calc(100vh);
 }
 
 .main-nav__item {
