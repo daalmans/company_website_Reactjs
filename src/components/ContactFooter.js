@@ -24,7 +24,7 @@ const ContactFooter = () => {
                     {contact_info.email}
                 </li>
                         <li>
-                            <span>Address:</span>
+                            <span>Adres:</span>
                             <br />
                     {contact_info.adres}
                     <br />

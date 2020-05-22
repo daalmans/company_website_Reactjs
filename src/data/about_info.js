@@ -26,7 +26,7 @@ export const about_info = [
         message: ['Zapraszam na spotkanie! Moje dwudziestoletnie doświadczenie w poradnictwie psychologicznym wskazuje, że każdy może uczynić swoje życie bardziej satysfakcjonującym. Czasami jednak, by tak się stało,  potrzebuje  pomocy.  Chętnie wesprę Was w tej drodze!']
         },
     {
-        imie: 'Dr. Radosław Molenda',
+        imie: 'Dr Radosław Molenda',
         url: 'radoslaw-molenda',
         opis: 'Doktor psychologii',
         url_img: '/img/Radoslaw_Molenda.png',
